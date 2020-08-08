@@ -1,6 +1,8 @@
 import {moduleMetadata} from '@storybook/angular';
-import {IconModule} from "../app/icon/icon.module";
-import {IconComponent} from "../app/icon/icon.component";
+import {IconModule} from "./icon.module";
+import {IconComponent} from "./icon.component";
+import {BrowserModule} from "@angular/platform-browser";
+import {MatIcon, MatIconModule} from "@angular/material/icon";
 
 export default {
   title: "Icon",

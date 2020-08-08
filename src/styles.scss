@@ -1,4 +1,92 @@
-/* You can add global styles to this file, and also import other style files */
+$light: #F7FAFC;
+$text-color: #2D3748;
+$border: #E2E8F0;
+$light-text: #A0AEC0;
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+$primary: #4299E1;
+$danger: #F56565;
+$success: #48BB78;
+
+
+html, body {
+  height: 100%;
+  font-size: 1rem;
+  color: $text-color
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Roboto Light Neue", sans-serif;
+}
+
+.active-bg-blue-800:active {
+  background-color: #2C5282;
+}
+
+.active-bg-green-800:active {
+  background-color: #276749;
+}
+
+.active-bg-red-800:active {
+  background-color: #9B2C2C;
+}
+
+.dropdown {
+  position: relative;
+  ul {
+    display: none;
+  }
+}
+
+.open {
+  ul {
+    display: block;
+    position: absolute;
+    background-color: white;
+    border: 1px solid $border;
+    padding: 16px 0;
+    border-radius: 4px;
+    top: 24px;
+    box-shadow: 1px 1px 5px -2px gray;
+  }
+
+  li {
+    padding: 16px 16px;
+    cursor: pointer;
+    text-wrap: none;
+    white-space: nowrap;
+    list-style: none;
+    &:hover {
+      background-color: $light;
+    }
+  }
+
+
+}
+
+p{padding: 0;
+margin: 0}
+
+h1,h4{
+  margin: 8px 0;
+}
+
+a, li{
+
+  text-decoration: inherit;
+  color: inherit;
+}
+
+hr{
+  border: 0;
+  border-top: 1px solid $border;
+}
+
+ul{
+  padding:0 ;
+}
+
+li{
+  list-style: none;
+}
+
